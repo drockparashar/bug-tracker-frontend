@@ -1,0 +1,197 @@
+/* Landing Page Styles */
+
+:root {
+    --primary-color: #5e60ce; /* Purple shade */
+    --secondary-color: #64dfdf; /* Light blue shade */
+    --text-color: #ffffff; /* White text */
+    --background-color: #f8f8f8; /* Light grey background */
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+  }
+  
+  
+.logo-img {
+    width: 150px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+  .hero {
+    text-align: center;
+  }
+
+  .intro-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .intro{
+    width: 70%;
+  }
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .feature-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .h3
+  {
+    font-weight: 700;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .optimization-icon {
+    background-image: url('../assets/optimization.png');
+  }
+  
+  .structure-icon {
+    background-image: url('../assets/organization.png');
+  }
+  
+  .productivity-icon {
+    background-image: url('../assets/productivity.png');
+  }
+  
+  .workflow-icon {
+    background-image: url('../assets/workflow.png');
+  }
+
+/* How It Works Section Styles */
+.how-it-works {
+    background-color: #fff; /* White background */
+    color: #007bff; /* Blue text color */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .step {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .step-number {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+  }
+  
+  h3 {
+    margin-top: 40px; /* Adjust based on step number size */
+    color: #007bff; /* Blue text color */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #6c757d; /* Grey text color */
+  }
+
+  /* Get Started Section Styles */
+.get-started {
+    background-color: #fff; /* White background */
+    color: #007bff; /* Blue text color */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .get-started-content {
+    margin: auto;
+    width: 6 0%;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .user-login, .admin-login {
+    text-align: center;
+  }
+  
+  
+  .Button {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  

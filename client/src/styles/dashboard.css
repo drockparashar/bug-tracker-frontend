@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px rgb(240, 240, 240);
+}
+
+.right
+{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.left{
+    display: flex;
+}
+.logo-img {
+    width: 150px; 
+    height: auto;
+    margin-right: 10px; 
+    align-self: flex-start;
+  }
