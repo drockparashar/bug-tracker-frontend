@@ -28,7 +28,7 @@ const AdminHome = () => {
     console.log(e, status);
     try {
       await axios.put(
-        "http://localhost:3002/bug/update",
+        "https://bug-tracker-backend-1.onrender.com/bug/update",
         {
           _id: e,
           status,
@@ -39,7 +39,7 @@ const AdminHome = () => {
           },
         }
       );
-      const response = await axios.get("http://localhost:3002/bug/get");
+      const response = await axios.get("https://bug-tracker-backend-1.onrender.com/bug/get");
       console.log(response.data);
       setBugs(response.data);
     } catch (err) {
@@ -51,7 +51,7 @@ const AdminHome = () => {
     console.log(e);
     try {
       await axios.delete(
-        "http://localhost:3002/bug/delete",
+        "https://bug-tracker-backend-1.onrender.com/bug/delete",
         {
           data: {
             _id: e,
@@ -65,7 +65,7 @@ const AdminHome = () => {
       );
       alert("Bugd Deleted Succesfully");
 
-      const response = await axios.get("http://localhost:3002/bug/get");
+      const response = await axios.get("https://bug-tracker-backend-1.onrender.com/bug/get");
       setBugs(response.data);
     } catch (err) {
       console.log(err);
@@ -82,7 +82,7 @@ const AdminHome = () => {
   useEffect(() => {
     const getBugs = async () => {
       try {
-        const response = await axios.get("http://localhost:3002/bug/get", {
+        const response = await axios.get("https://bug-tracker-backend-1.onrender.com/bug/get", {
           headers: {
             authorization: cookies.access_token,
           },

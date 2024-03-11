@@ -28,7 +28,7 @@ const CreateBug = () => {
         status
       );
       await axios.post(
-        "http://localhost:3002/bug/create",
+        "https://bug-tracker-backend-1.onrender.com/bug/create",
         {
           title,
           description,

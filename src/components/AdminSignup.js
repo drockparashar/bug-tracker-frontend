@@ -14,7 +14,7 @@ const AdminSignup = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3002/admin/adminRegister", {
+      await axios.post("https://bug-tracker-backend-1.onrender.com/admin/adminRegister", {
         email,
         name,
         username,

@@ -29,7 +29,7 @@ const UserHome = () => {
     console.log(e, status);
     try {
       await axios.put(
-        "http://localhost:3002/bug/update",
+        "https://bug-tracker-backend-1.onrender.com/bug/update",
         {
           _id: e,
           status,
@@ -40,7 +40,7 @@ const UserHome = () => {
           },
         }
       );
-      const response = await axios.get("http://localhost:3002/bug/get");
+      const response = await axios.get("https://bug-tracker-backend-1.onrender.com/bug/get");
       console.log(response.data);
       setBugs(response.data);
     } catch (err) {
@@ -58,7 +58,7 @@ const UserHome = () => {
   useEffect(() => {
     const getBugs = async () => {
       try {
-        const response = await axios.get("http://localhost:3002/bug/get", {
+        const response = await axios.get("https://bug-tracker-backend-1.onrender.com/bug/get", {
           headers: {
             authorization: cookies.access_token,
           },

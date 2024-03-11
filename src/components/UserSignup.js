@@ -13,7 +13,7 @@ const UserSignup = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3002/user/userRegister", {
+      await axios.post("https://bug-tracker-backend-1.onrender.com/user/userRegister", {
         email,
         name,
         username,

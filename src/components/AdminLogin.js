@@ -16,7 +16,7 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3002/admin/adminLogin",
+        "https://bug-tracker-backend-1.onrender.com/admin/adminLogin",
         {
           username,
           password,
